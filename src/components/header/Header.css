@@ -1,0 +1,108 @@
+header {
+  /* height: 100vh; */
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.header-container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+/* Download */
+.Downloadcolor {
+  color: #60a3d7;
+  background: transparent;
+}
+.Downloadcolor:hover {
+  background: #4df5ff;
+  color: #19477d;
+}
+.Talkcolor {
+  background: #4df5ff;
+  color: #19477d;
+}
+.Talkcolor:hover {
+  color: #60a3d7;
+  background: transparent;
+}
+/* Header Social */
+
+.header__social {
+  height: 125px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+.inner_header_social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__social::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #19477d;
+}
+
+/* ME  */
+
+.me {
+  background: linear-gradient(#4df5ff, transparent);
+  width: 22rem;
+  height: 30rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  -webkit-border-radius: 12rem 12rem 0 0;
+  -moz-border-radius: 12rem 12rem 0 0;
+  -ms-border-radius: 12rem 12rem 0 0;
+  -o-border-radius: 12rem 12rem 0 0;
+}
+
+
+/* Scroll Down */
+
+.scrollDown {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+.scroll__down {
+  position: relative;
+  bottom: -30%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+
+/* Width */
+
+.width {
+  font-size: 2rem;
+}
+
+/* ----------------- MEDIA QUERIES (MEDIUM DEVICES) ------------------------*/
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+}
+
+/* ----------------- MEDIA QUERIES (SMALL DEVICES) ------------------------*/
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
+  /* .header__social,
+  .scroll__down{
+    display: none;
+  } */
+}
+    

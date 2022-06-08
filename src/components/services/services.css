@@ -1,0 +1,83 @@
+.service__head {
+  text-align: center;
+}
+
+.service__list {
+  list-style-type: none;
+}
+
+.services__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.service {
+  background: #2c2c6c;
+  border-radius: 0 0 2rem 2rem;
+  border-color: #4db5ff;
+  height: fit-content;
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: transparent;
+  border: 1px solid #4db5ff;
+  cursor: default;
+}
+
+.service__head {
+  background: #4db5ff;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+  color: #1f1f38;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.service__list{
+    padding: 2rem;
+    margin-bottom: 0.8rem;
+  
+    
+}
+
+.service__list-icon {
+    color: #4db5ff;
+    /* margin-top: 2px; */
+    font-size: 1.5rem;
+    /* width: 20px; */
+    
+}
+
+.service__list p {
+    font-size: 0.9rem;
+    ;
+}
+li{
+    display: flex; 
+    align-items: flex-start
+    /* display: flex; */
+}
+.iconDiv{
+padding-right: 1rem;
+}
+
+/* ============================== MEDIA QUERIES (MEDIUM DEVICES) ========================== */
+
+@media screen and (max-width: 1024px){
+    .services__container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ============================== MEDIA QUERIES (SMALL DEVICES) ========================== */
+
+@media screen and (max-width: 600px){
+    
+}

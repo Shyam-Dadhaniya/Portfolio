@@ -1,0 +1,133 @@
+.contact__container {
+  display: flex;
+}
+
+.contact__option {
+  background: #2c2c6c;
+  padding: 1.4rem 1.4rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  color: default;
+}
+.contact__option {
+  font-size: 10px;
+}
+
+.contact__option h4 {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+.contact__option h5 {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.send {
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact__option a {
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+.contact__icon {
+  font-size: 2rem;
+  display: block;
+  margin: auto;
+}
+form {
+  width: 100%;
+  padding: 0.4rem 4rem;
+  border-radius: 2rem;
+  gap: 1.2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(77, 181, 255, 0.4);
+  resize: none;
+}
+
+.btn.btn-send {
+  background: #4db5ff;
+  width: 9rem;
+  height: 3rem;
+  border: none;
+}
+
+/* Tosatfiy */
+
+.Toastify__progress-bar-theme--light {
+  background: #07bc0c;
+}
+
+.Toastify__toast-theme--light {
+  background: black !important;
+  color: #fff !important;
+}
+
+/* Scroll-Up */
+.scrollUp {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+}
+
+.scroll__up {
+  position: relative;
+  bottom: -30%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scrollUp {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact__option {
+    width: 100%;
+  }
+  .btn.btn-send {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 430) {
+  .contact__option h5 {
+    font-size: 1rem;
+  }
+}
